@@ -1,0 +1,10 @@
+name: CacheCache
+version: 1.0
+author: MarcJus
+main: fr.marcjus.cachecache.Main
+commands:
+  cache:
+    permission: CacheCache.commands.cachecache
+    usage: /cache <start|stop> [player]
+  pnj:
+    permission: CacheCache.commands.pnj

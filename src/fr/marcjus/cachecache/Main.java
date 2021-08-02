@@ -1,6 +1,7 @@
 package fr.marcjus.cachecache;
 
 import fr.marcjus.cachecache.commands.CommandCache;
+import fr.marcjus.cachecache.commands.CommandCacheComplete;
 import fr.marcjus.cachecache.commands.CommandPnj;
 import fr.marcjus.cachecache.game.GameListeners;
 import fr.marcjus.cachecache.game.GameManager;
@@ -17,6 +18,7 @@ public class Main extends JavaPlugin {
         pm.registerEvents(new GameListeners(), this);
         getCommand("pnj").setExecutor(new CommandPnj());
         getCommand("cache").setExecutor(new CommandCache(this));
+        getCommand("cache").setTabCompleter(new CommandCacheComplete());
     }
 
     @Override
